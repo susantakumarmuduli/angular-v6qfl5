@@ -1,0 +1,12 @@
+<div class="control-section" style="overflow:auto;">
+    <div class="pivotfieldlist-control">
+        <ejs-pivotfieldlist #pivotfieldlist id='PivotFieldList' [dataSourceSettings]=dataSourceSettings renderMode="Fixed"
+            (enginePopulated)='afterPopulate($event)' allowCalculatedField='true' (load)='onLoad()' (dataBound)='ondataBound()'>
+        </ejs-pivotfieldlist>
+    </div>
+    <div class="pivotview-control">
+        <ejs-pivotview #pivotview id='PivotViewFieldList' width='99%' height='600' (enginePopulated)='afterEnginePopulate($event)'
+            [gridSettings]='gridSettings'>
+        </ejs-pivotview>
+    </div>
+</div>
